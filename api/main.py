@@ -10,7 +10,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://mki.moe", "https://mik.moe"],
-    allow_origin_regex=['https://.*\.mki\.moe', "https://.*\.mik\.moe"],
+    allow_origin_regex='https://.*\.mki\.moe',
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
