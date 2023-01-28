@@ -8,6 +8,6 @@ app = FastAPI()
 app.include_router(bili.router)
 
 
-@app.get("/api/ping")
+@app.get("/ping")
 async def ping():
     return resp.common_resp(data='Pong!')

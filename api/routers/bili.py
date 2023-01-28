@@ -6,7 +6,7 @@ from api.dependencies import get_token_header
 from api.utils import response as resp
 
 router = APIRouter(
-    prefix="/api/bili",
+    prefix="/bili",
     tags=["bilibili"],
     dependencies=[Depends(get_token_header)],
 )
