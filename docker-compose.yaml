@@ -1,0 +1,9 @@
+version: "3"
+service:
+  api:
+    image: beiyanpiki/mki-api:latest
+    container: api
+    environment:
+      - ADMIN_TOKEN=RANDOM_ADMIN_TOKEN_HERE
+    ports:
+      - 5000:5000
